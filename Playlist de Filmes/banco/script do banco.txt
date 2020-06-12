@@ -1,0 +1,22 @@
+
+<!-- Script do Banco de Dados -->
+
+CREATE TABLE playlist(
+    id int AUTO_INCREMENT,
+    titulo char(20) not null,
+    imagem blob,
+    created date, -- No formato americano Y-m-d
+    primary key (id)
+    );
+
+
+CREATE TABLE filme(
+    id_filme int AUTO_INCREMENT,
+    filme varchar(25) not null, -- Campo Obrigatório
+    ano int(4), 
+    genero char(15) not null, -- Campo Obrigatório
+    link varchar(100), -- Campo não obrigatório
+    hashtag varchar(50),
+    registro date,
+    PRIMARY KEY(id_filme)
+    );
